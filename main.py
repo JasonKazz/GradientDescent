@@ -32,6 +32,6 @@ plt.plot(x_curve, y_curve)
 x_list = np.array(x_list)
 y_list = (x_list**3)-5*x_list
 
-plt.scatter(x_list, y_list, color='red')
+plt.scatter(x_list, y_list)
 plt.axis('equal')
 plt.grid()
