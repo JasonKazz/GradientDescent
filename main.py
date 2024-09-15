@@ -13,9 +13,10 @@ import numpy as np
 
 #gradient descent
 lr = 0.01
-x = -2
+n_epochs = 20
+x = 3
 x_list = [x]
-for i in range(10):
+for i in range(n_epochs):
   #the negative sign (x-lr...) means it will go down the slope (gradient descent)
   #slope = 3*(x**2)-5
   x = x - lr*(3*(x**2)-5)
@@ -31,9 +32,6 @@ plt.plot(x_curve, y_curve)
 x_list = np.array(x_list)
 y_list = (x_list**3)-5*x_list
 
-plt.scatter(x_list, y_list)
+plt.scatter(x_list, y_list, color='red')
 plt.axis('equal')
 plt.grid()
-
-#plt.figure()
-#plt.plot(x_list)
